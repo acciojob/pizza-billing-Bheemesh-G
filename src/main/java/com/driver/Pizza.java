@@ -78,9 +78,13 @@ public class Pizza {
 
     public String getBill(){
         // your code goes here
+        System.out.println("Base Price Of The Pizza: "+vegPrice);
+        System.out.println("Extra Cheese Added: "+extraCheese);
+        System.out.println("Extra Toppings Added: "+extraToppingsVeg);
+        System.out.println("Paperbag Added: "+paperBagPrice);
 
         bill = String.valueOf(price);
 
-        return this.bill;
+        return "Total Price: "+bill;
     }
 }
