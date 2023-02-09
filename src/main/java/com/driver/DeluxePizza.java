@@ -16,18 +16,20 @@ public class DeluxePizza extends Pizza {
     public DeluxePizza(Boolean isVeg) {
         super(isVeg);
         // your code goes here
+        this.isVeg = isVeg;
         this.dVegPrice = vegPrice+extraCheese+extraToppingsVeg;
         this.dNonVegPrice = nonVegPrice+extraCheese+extraToppingsNonVeg;
 
     }
     @Override
     public int getPrice() {
-        if(isVeg == true)
+        if(isVeg)
         {
-           price = dVegPrice;
+           price = this.dVegPrice;
         }
         else{
-            price = dNonVegPrice;
+            price = this.dNonVegPrice;
+            System.out.println(price+"......");
         }
         return price;
     }

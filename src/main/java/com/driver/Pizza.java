@@ -46,12 +46,12 @@ public class Pizza {
         if(isVeg)
         {
 
-            price = vegPrice+extraCheese;
+            price = price+extraCheese;
         }
         else {
            // price = nonVegPrice;
 
-            price = nonVegPrice+extraCheese;
+            price = price+extraCheese;
         }
 
     }
