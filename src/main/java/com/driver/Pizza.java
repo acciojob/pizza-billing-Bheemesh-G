@@ -45,14 +45,13 @@ public class Pizza {
 
         if(isVeg == true)
         {
-            price = vegPrice;
 
-            price = price+extraCheese;
+            price = vegPrice+extraCheese;
         }
         else {
-            price = nonVegPrice;
+           // price = nonVegPrice;
 
-            price = price+extraCheese;
+            price = nonVegPrice+extraCheese;
         }
 
     }
@@ -61,13 +60,13 @@ public class Pizza {
         // your code goes here
         if(isVeg==true)
         {
-            price = vegPrice;
-            price = price+extraToppingsVeg;
+          //  price = vegPrice;
+            price = vegPrice+extraToppingsVeg;
         }
         else {
-            price = nonVegPrice;
+           // price = nonVegPrice;
 
-            price = price + extraToppingsNonVeg;
+            price = nonVegPrice + extraToppingsNonVeg;
         }
     }
 
