@@ -25,10 +25,10 @@ public class DeluxePizza extends Pizza {
         if(isVeg == true)
         {
            price = dVegPrice;
-           return price;
         }
-
-        price = dNonVegPrice;
+        else{
+            price = dNonVegPrice;
+        }
         return price;
     }
 
@@ -38,13 +38,11 @@ public class DeluxePizza extends Pizza {
 
         if(isVeg==true)
         {
-            price = dVegPrice;
-            price = dVegPrice+extraCheese;
+            price = price+extraCheese;
         }
 
         else {
-            price = dNonVegPrice;
-            price = dNonVegPrice+extraCheese;
+            price = price+extraCheese;
         }
 
     }
@@ -54,15 +52,12 @@ public class DeluxePizza extends Pizza {
 
         if(isVeg == true)
         {
-            price = dVegPrice;
-            price = dVegPrice+extraToppingsVeg;
+            price = price+extraToppingsVeg;
         }
 
         else {
 
-            price = dNonVegPrice;
-
-            price = dNonVegPrice+extraToppingsNonVeg;
+            price = price+extraToppingsNonVeg;
         }
 
     }
