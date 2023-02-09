@@ -80,6 +80,8 @@ public class Pizza {
 
         bill = String.valueOf(price);
 
-        return "Base Price Of The Pizza: "+vegPrice+"\nExtra Cheese Added: "+extraCheese+"\nExtra Toppings Added: "+extraToppingsVeg+"\nPaperbag Added: "+paperBagPrice+"\nTotal Price: "+bill;
+       // return "Base Price Of The Pizza: "+vegPrice+"\nExtra Cheese Added: "+extraCheese+"\nExtra Toppings Added: "+extraToppingsVeg+"\nPaperbag Added: "+paperBagPrice+"\nTotal Price: "+bill;
+
+        return this.bill;
     }
 }
