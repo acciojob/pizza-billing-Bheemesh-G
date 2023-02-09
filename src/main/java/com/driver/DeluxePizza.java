@@ -9,7 +9,7 @@ public class DeluxePizza extends Pizza {
 
     int dVegPrice;
     int dNonVegPrice;
-    int dextraToppings;
+   // int dextraToppings;
 
 
 
@@ -76,6 +76,7 @@ public class DeluxePizza extends Pizza {
 
     @Override
     public String getBill(){
+
 
 
         bill = String.valueOf(price);

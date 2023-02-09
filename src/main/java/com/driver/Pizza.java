@@ -34,8 +34,9 @@ public class Pizza {
             price = vegPrice;
             return price;
         }
-
-        price = nonVegPrice;
+        else{
+            price = nonVegPrice;
+        }
 
         return price;
     }
@@ -43,7 +44,7 @@ public class Pizza {
     public void addExtraCheese(){
         // your code goes here
 
-        if(isVeg == true)
+        if(isVeg)
         {
 
             price = vegPrice+extraCheese;
@@ -61,12 +62,12 @@ public class Pizza {
         if(isVeg==true)
         {
           //  price = vegPrice;
-            price = vegPrice+extraToppingsVeg;
+            price = price+extraToppingsVeg;
         }
         else {
            // price = nonVegPrice;
 
-            price = nonVegPrice + extraToppingsNonVeg;
+            price = price + extraToppingsNonVeg;
         }
     }
 
