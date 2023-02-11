@@ -76,6 +76,7 @@ public class Pizza {
 
         if(isBilled==false)
         {
+            isBilled = true;
             if(isExtraCheese)
             {
                 bill+="Extra Cheese Added: "+80+"\n";
