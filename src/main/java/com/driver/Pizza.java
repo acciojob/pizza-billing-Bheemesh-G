@@ -17,6 +17,13 @@ public class Pizza {
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
         // your code goes here
+        isExtraToppings = false;
+        isExtraCheese = false;
+        isBilled = false;
+        isAddedBag = false;
+
+        this.bill = "";
+
 
         if(isVeg)
         {
@@ -27,7 +34,7 @@ public class Pizza {
         else{
             this.price = 400;
             this.toppings = 120;
-            this.bill = "Base Price Of The Pizza: "+this.price+"\n";
+            this.bill = this.bill+"Base Price Of The Pizza: "+this.price+"\n";
         }
 
 
@@ -91,10 +98,8 @@ public class Pizza {
                 bill+="Paperbag Added: "+20+"\n";
             }
 
-            bill+="Total Price: "+this.price;
-
-            return bill;
+            bill+="Total Price: "+this.price+"\n";
         }
-        return "";
+        return bill;
     }
 }
